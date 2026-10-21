@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal Layanan Akademik | FST UNPATTI</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="lewati" href="#konten-utama">Lewati ke konten utama</a>
+  <header class="kepala">
+    <div class="wadah kepala__isi">
+      <div class="kepala__logo">
+        <img src="img/logo-unpatti.png" width="56" height="55" alt="Logo Universitas Pattimura">
+        <img class="logo-fst" src="img/logo-fst.png" width="75" height="40" alt="Logo Fakultas Sains dan Teknologi">
+      </div>
+      <div>
+        <p class="kepala__instansi">Fakultas Sains dan Teknologi, Universitas Pattimura</p>
+        <p class="h1-ganti">Portal Layanan Akademik</p>
+      </div>
+    </div>
+    <img class="kepala__ombak" src="img/gelombang.svg" alt="" width="600" height="80">
+  </header>
+  <nav class="navigasi" aria-label="Navigasi utama">
+    <ul class="wadah navigasi__daftar">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="index.html#layanan">Layanan</a></li>
+      <li><a href="index.html#permohonan">Ajukan permohonan</a></li>
+      <li><a href="status.html" aria-current="page">Cek status</a></li>
+    </ul>
+  </nav>
+
+  <main id="konten-utama" class="wadah">
+    <section aria-labelledby="judul-status">
+      <h1 id="judul-status">Cek status permohonan</h1>
+      <p>Versi HTML dan CSS tidak memiliki database, jadi status tidak dapat dicari otomatis. Untuk menanyakan status, kirim email ke
+        <a href="mailto:akademik.fst@example.ac.id">akademik.fst@example.ac.id</a> dengan menyebut nama dan NIM, atau datang ke Bagian Akademik pada jam layanan.</p>
+
+      <h2>Contoh tampilan hasil</h2>
+      <article class="kartu" style="margin-top:1rem" aria-labelledby="hasil">
+        <h3 id="hasil">Permohonan LA-261013-A1B2C3</h3>
+        <p><span class="lencana lencana--diproses">Diproses</span></p>
+        <dl class="rincian">
+          <div><dt>Layanan</dt><dd>Surat Aktif Kuliah</dd></div>
+          <div><dt>Nama</dt><dd>Contoh Mahasiswa</dd></div>
+          <div><dt>Cara pengambilan</dt><dd>Ambil di Bagian Akademik</dd></div>
+          <div><dt>Diajukan</dt><dd>13-10-2026 08:15 WIT</dd></div>
+          <div><dt>Pembaruan terakhir</dt><dd>14-10-2026 09:30 WIT</dd></div>
+          <div><dt>Catatan petugas</dt><dd>Menunggu tanda tangan Wakil Dekan.</dd></div>
+        </dl>
+      </article>
+    </section>
+  </main>
+
+  <footer class="kaki" id="kontak">
+    <div class="wadah">
+      <p><strong>Bagian Akademik FST UNPATTI</strong></p>
+      <p>Email: <a href="mailto:akademik.fst@example.ac.id">akademik.fst@example.ac.id</a></p>
+      <p class="tautan-kecil"><a href="admin/login.html">Masuk petugas</a></p>
+      <p><small>Tugas Pertemuan 5: Responsive &amp; Accessible Web Client. Contoh data, bukan layanan resmi.</small></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal Layanan Akademik | FST UNPATTI</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="lewati" href="#konten-utama">Lewati ke konten utama</a>
+  <header class="kepala">
+    <div class="wadah kepala__isi">
+      <div class="kepala__logo">
+        <img src="img/logo-unpatti.png" width="56" height="55" alt="Logo Universitas Pattimura">
+        <img class="logo-fst" src="img/logo-fst.png" width="75" height="40" alt="Logo Fakultas Sains dan Teknologi">
+      </div>
+      <div>
+        <p class="kepala__instansi">Fakultas Sains dan Teknologi, Universitas Pattimura</p>
+        <p class="h1-ganti">Portal Layanan Akademik</p>
+      </div>
+    </div>
+    <img class="kepala__ombak" src="img/gelombang.svg" alt="" width="600" height="80">
+  </header>
+  <nav class="navigasi" aria-label="Navigasi utama">
+    <ul class="wadah navigasi__daftar">
+      <li><a href="index.html" aria-current="page">Beranda</a></li>
+      <li><a href="index.html#layanan">Layanan</a></li>
+      <li><a href="index.html#permohonan">Ajukan permohonan</a></li>
+      <li><a href="status.html">Cek status</a></li>
+    </ul>
+  </nav>
+
+  <main id="konten-utama" class="wadah">
+    <section id="beranda" class="intro" aria-labelledby="judul-intro">
+      <h1 id="judul-intro">Urus keperluan akademik tanpa antre di loket</h1>
+      <p>Pilih layanan, isi formulir, lalu kirim ke Bagian Akademik. Proses umumnya 1–3 hari kerja.</p>
+      <dl class="info">
+        <div><dt>Jam layanan</dt><dd>Senin–Jumat, 08.00–15.00 WIT</dd></div>
+        <div><dt>Lokasi pengambilan</dt><dd>Bagian Akademik FST, Kampus Poka, Ambon</dd></div>
+      </dl>
+    </section>
+
+    <section id="layanan" aria-labelledby="judul-layanan">
+      <h2 id="judul-layanan">Layanan tersedia</h2>
+      <div class="kartu-grid">
+        <article class="kartu">
+          <h3>Surat Aktif Kuliah</h3>
+          <p>Bukti status mahasiswa aktif untuk beasiswa, tunjangan, atau administrasi instansi lain.</p>
+          <p class="kartu__meta">Estimasi: 1 hari kerja</p>
+          <a class="tombol tombol--garis" href="#permohonan">Ajukan Surat Aktif Kuliah</a>
+        </article>
+
+        <article class="kartu">
+          <h3>Transkrip Sementara</h3>
+          <p>Rekap nilai dan IPK sampai semester berjalan, belum disahkan sebagai transkrip akhir.</p>
+          <p class="kartu__meta">Estimasi: 2 hari kerja</p>
+          <a class="tombol tombol--garis" href="#permohonan">Ajukan Transkrip Sementara</a>
+        </article>
+
+        <article class="kartu">
+          <h3>Cuti Akademik</h3>
+          <p>Penghentian studi sementara untuk satu semester dengan persetujuan Dosen Pembimbing Akademik.</p>
+          <p class="kartu__meta">Estimasi: 3 hari kerja</p>
+          <a class="tombol tombol--garis" href="#permohonan">Ajukan Cuti Akademik</a>
+        </article>
+
+        <article class="kartu">
+          <h3>Legalisir Dokumen</h3>
+          <p>Pengesahan salinan ijazah atau transkrip. Bawa dokumen asli saat pengambilan.</p>
+          <p class="kartu__meta">Estimasi: 2 hari kerja</p>
+          <a class="tombol tombol--garis" href="#permohonan">Ajukan Legalisir Dokumen</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="permohonan" aria-labelledby="judul-form">
+      <h2 id="judul-form">Formulir permohonan</h2>
+      <p>Kolom bertanda <span aria-hidden="true">*</span><span class="sr-only">bintang</span> wajib diisi. Formulir dikirim lewat aplikasi email Anda ke Bagian Akademik.</p>
+
+      <form class="form" action="mailto:akademik.fst@example.ac.id" method="post" enctype="text/plain">
+        <div class="bidang">
+          <label for="nama">Nama lengkap <span aria-hidden="true">*</span></label>
+          <input type="text" id="nama" name="nama" autocomplete="name" required minlength="3" maxlength="80">
+        </div>
+
+        <div class="bidang">
+          <label for="nim">NIM <span aria-hidden="true">*</span></label>
+          <input type="text" id="nim" name="nim" inputmode="numeric" required pattern="[0-9]{10,12}" maxlength="12" aria-describedby="bantu-nim">
+          <p class="bantu" id="bantu-nim">Angka saja, 10–12 digit.</p>
+        </div>
+
+        <div class="bidang">
+          <label for="email">Email aktif <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" required maxlength="120" aria-describedby="bantu-email">
+          <p class="bantu" id="bantu-email">Contoh: nama@gmail.com.</p>
+        </div>
+
+        <div class="bidang">
+          <label for="layanan-pilih">Jenis layanan <span aria-hidden="true">*</span></label>
+          <select id="layanan-pilih" name="layanan" required>
+            <option value="">Pilih layanan</option>
+            <option>Surat Aktif Kuliah</option>
+            <option>Transkrip Sementara</option>
+            <option>Cuti Akademik</option>
+            <option>Legalisir Dokumen</option>
+          </select>
+        </div>
+
+        <fieldset class="bidang bidang--penuh">
+          <legend>Cara pengambilan dokumen</legend>
+          <div class="pilihan">
+            <input type="radio" id="ambil-loket" name="ambil" value="Ambil di Bagian Akademik" checked>
+            <label for="ambil-loket">Ambil di Bagian Akademik</label>
+          </div>
+          <div class="pilihan">
+            <input type="radio" id="ambil-pdf" name="ambil" value="Kirim berkas PDF ke email">
+            <label for="ambil-pdf">Kirim berkas PDF ke email</label>
+          </div>
+        </fieldset>
+
+        <div class="bidang bidang--penuh">
+          <label for="keperluan">Keperluan <span aria-hidden="true">*</span></label>
+          <textarea id="keperluan" name="keperluan" rows="4" required minlength="10" maxlength="300" aria-describedby="bantu-keperluan"></textarea>
+          <p class="bantu" id="bantu-keperluan">Jelaskan singkat, 10–300 karakter.</p>
+        </div>
+
+        <div class="bidang bidang--penuh">
+          <div class="pilihan">
+            <input type="checkbox" id="setuju" name="setuju" value="ya" required>
+            <label for="setuju">Data yang saya isi benar dan dapat dipertanggungjawabkan.</label>
+          </div>
+        </div>
+
+        <div class="bidang--penuh">
+          <button class="tombol" type="submit">Kirim permohonan</button>
+          <button class="tombol tombol--garis" type="reset">Kosongkan formulir</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="kaki" id="kontak">
+    <div class="wadah">
+      <p><strong>Bagian Akademik FST UNPATTI</strong></p>
+      <p>Email: <a href="mailto:akademik.fst@example.ac.id">akademik.fst@example.ac.id</a></p>
+      <p class="tautan-kecil"><a href="admin/login.html">Masuk petugas</a></p>
+      <p><small>Tugas Pertemuan 5: Responsive &amp; Accessible Web Client. Contoh data, bukan layanan resmi.</small></p>
+    </div>
+  </footer>
+</body>
+</html>

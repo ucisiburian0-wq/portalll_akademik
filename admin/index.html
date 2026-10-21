@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel Petugas | FST UNPATTI</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <a class="lewati" href="#konten-utama">Lewati ke konten utama</a>
+  <header class="kepala">
+    <div class="wadah kepala__isi">
+      <div class="kepala__logo">
+        <img src="../img/logo-unpatti.png" width="56" height="55" alt="Logo Universitas Pattimura">
+        <img class="logo-fst" src="../img/logo-fst.png" width="75" height="40" alt="Logo Fakultas Sains dan Teknologi">
+      </div>
+      <div>
+        <p class="kepala__instansi">Fakultas Sains dan Teknologi, Universitas Pattimura</p>
+        <p class="h1-ganti">Panel Petugas</p>
+      </div>
+    </div>
+    <img class="kepala__ombak" src="../img/gelombang.svg" alt="" width="600" height="80">
+  </header>
+  <nav class="navigasi" aria-label="Navigasi utama">
+    <ul class="wadah navigasi__daftar">
+      <li><a href="index.html" aria-current="page">Daftar permohonan</a></li>
+      <li><a href="../index.html">Lihat portal</a></li>
+    </ul>
+  </nav>
+
+  <main id="konten-utama" class="wadah">
+    <section aria-labelledby="judul-panel">
+      <div class="bar-admin">
+        <h1 id="judul-panel">Daftar permohonan</h1>
+        <a class="tombol tombol--garis" href="login.html">Keluar</a>
+      </div>
+      <p class="kosong">Tampilan contoh dengan data tiruan; perubahan tidak tersimpan.</p>
+      <p>Total: Menunggu <strong>1</strong>, Diproses <strong>1</strong>, Selesai <strong>1</strong>, Ditolak <strong>0</strong></p>
+      <form class="filter" action="index.html" method="get">
+        <div class="bidang"><label for="f-status">Tampilkan status</label>
+          <select id="f-status" name="status">
+            <option value="">Semua</option><option>Menunggu</option><option>Diproses</option><option>Selesai</option><option>Ditolak</option>
+          </select></div>
+        <button class="tombol" type="submit">Terapkan</button>
+      </form>
+      <div class="daftar-admin">
+        <article class="kartu" aria-labelledby="p1">
+          <h2 id="p1" style="font-size:1.15rem">LA-261013-A1B2C3: Surat Aktif Kuliah <span class="lencana lencana--diproses">Diproses</span></h2>
+          <dl class="rincian">
+            <div><dt>Nama / NIM</dt><dd>Contoh Mahasiswa / 2021123456</dd></div>
+            <div><dt>Email</dt><dd>contoh@gmail.com</dd></div>
+            <div><dt>Pengambilan</dt><dd>Ambil di Bagian Akademik</dd></div>
+            <div><dt>Diajukan</dt><dd>13-10-2026 08:15 WIT</dd></div>
+            <div><dt>Keperluan</dt><dd>Untuk persyaratan beasiswa.</dd></div>
+          </dl>
+          <form class="filter" action="index.html" method="get">
+            <div class="bidang"><label for="s1">Ubah status</label>
+              <select id="s1" name="status"><option>Menunggu</option><option selected>Diproses</option><option>Selesai</option><option>Ditolak</option></select></div>
+            <div class="bidang"><label for="c1">Catatan untuk mahasiswa</label>
+              <input type="text" id="c1" name="catatan" maxlength="200" value="Menunggu tanda tangan Wakil Dekan."></div>
+            <button class="tombol" type="submit">Simpan</button>
+          </form>
+        </article>
+
+        <article class="kartu" aria-labelledby="p2">
+          <h2 id="p2" style="font-size:1.15rem">LA-261014-D4E5F6: Transkrip Sementara <span class="lencana lencana--menunggu">Menunggu</span></h2>
+          <dl class="rincian">
+            <div><dt>Nama / NIM</dt><dd>Siti Contoh / 2022654321</dd></div>
+            <div><dt>Email</dt><dd>siti@gmail.com</dd></div>
+            <div><dt>Pengambilan</dt><dd>PDF ke email</dd></div>
+            <div><dt>Diajukan</dt><dd>14-10-2026 10:02 WIT</dd></div>
+            <div><dt>Keperluan</dt><dd>Melengkapi berkas magang.</dd></div>
+          </dl>
+          <form class="filter" action="index.html" method="get">
+            <div class="bidang"><label for="s2">Ubah status</label>
+              <select id="s2" name="status"><option selected>Menunggu</option><option>Diproses</option><option>Selesai</option><option>Ditolak</option></select></div>
+            <div class="bidang"><label for="c2">Catatan untuk mahasiswa</label>
+              <input type="text" id="c2" name="catatan" maxlength="200" value=""></div>
+            <button class="tombol" type="submit">Simpan</button>
+          </form>
+        </article>
+
+        <article class="kartu" aria-labelledby="p3">
+          <h2 id="p3" style="font-size:1.15rem">LA-261012-0A9B8C: Legalisir Dokumen <span class="lencana lencana--selesai">Selesai</span></h2>
+          <dl class="rincian">
+            <div><dt>Nama / NIM</dt><dd>Budi Contoh / 2020112233</dd></div>
+            <div><dt>Email</dt><dd>budi@gmail.com</dd></div>
+            <div><dt>Pengambilan</dt><dd>Di Bagian Akademik</dd></div>
+            <div><dt>Diajukan</dt><dd>12-10-2026 13:40 WIT</dd></div>
+            <div><dt>Keperluan</dt><dd>Legalisir ijazah untuk melamar kerja.</dd></div>
+          </dl>
+          <form class="filter" action="index.html" method="get">
+            <div class="bidang"><label for="s3">Ubah status</label>
+              <select id="s3" name="status"><option>Menunggu</option><option>Diproses</option><option selected>Selesai</option><option>Ditolak</option></select></div>
+            <div class="bidang"><label for="c3">Catatan untuk mahasiswa</label>
+              <input type="text" id="c3" name="catatan" maxlength="200" value="Silakan ambil di loket."></div>
+            <button class="tombol" type="submit">Simpan</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="kaki" id="kontak">
+    <div class="wadah">
+      <p><strong>Bagian Akademik FST UNPATTI</strong></p>
+      <p>Email: <a href="mailto:akademik.fst@example.ac.id">akademik.fst@example.ac.id</a></p>
+      <p class="tautan-kecil"><a href="../admin/login.html">Masuk petugas</a></p>
+      <p><small>Tugas Pertemuan 5: Responsive &amp; Accessible Web Client. Contoh data, bukan layanan resmi.</small></p>
+    </div>
+  </footer>
+</body>
+</html>
